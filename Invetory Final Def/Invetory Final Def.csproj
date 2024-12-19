@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9536057-73E4-4830-88DA-13B7EEAB5E70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Invetory_Final_Def</RootNamespace>
+    <AssemblyName>Invetory Final Def</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative.Designer.cs">
+      <DependentUpon>Administrative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crops.Designer.cs">
+      <DependentUpon>Crops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fill-up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fill-up.Designer.cs">
+      <DependentUpon>Fill-up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FillupCrops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FillupCrops.Designer.cs">
+      <DependentUpon>FillupCrops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FillupLivestock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FillupLivestock.Designer.cs">
+      <DependentUpon>FillupLivestock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FillupSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FillupSupply.Designer.cs">
+      <DependentUpon>FillupSupply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FillupTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FillupTools.Designer.cs">
+      <DependentUpon>FillupTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livestock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livestock.Designer.cs">
+      <DependentUpon>Livestock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAccount.Designer.cs">
+      <DependentUpon>ManageAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageActivity.Designer.cs">
+      <DependentUpon>ManageActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reduceCrops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reduceCrops.Designer.cs">
+      <DependentUpon>reduceCrops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reducelivestock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reducelivestock.Designer.cs">
+      <DependentUpon>reducelivestock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reducesupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reducesupply.Designer.cs">
+      <DependentUpon>reducesupply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reducetools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reducetools.Designer.cs">
+      <DependentUpon>reducetools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply.Designer.cs">
+      <DependentUpon>Supply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools.Designer.cs">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrative.resx">
+      <DependentUpon>Administrative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crops.resx">
+      <DependentUpon>Crops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fill-up.resx">
+      <DependentUpon>Fill-up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FillupCrops.resx">
+      <DependentUpon>FillupCrops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FillupLivestock.resx">
+      <DependentUpon>FillupLivestock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FillupSupply.resx">
+      <DependentUpon>FillupSupply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FillupTools.resx">
+      <DependentUpon>FillupTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livestock.resx">
+      <DependentUpon>Livestock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAccount.resx">
+      <DependentUpon>ManageAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageActivity.resx">
+      <DependentUpon>ManageActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="reduceCrops.resx">
+      <DependentUpon>reduceCrops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reducelivestock.resx">
+      <DependentUpon>reducelivestock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reducesupply.resx">
+      <DependentUpon>reducesupply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reducetools.resx">
+      <DependentUpon>reducetools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply.resx">
+      <DependentUpon>Supply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools.resx">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
